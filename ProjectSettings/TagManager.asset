@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Shore
+  - Cloud
+  - Terrain
   - Projectile
   - TutorialRequirement
   layers:
@@ -15,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Terrain
   - Player
   - Hazard
   - Environment
