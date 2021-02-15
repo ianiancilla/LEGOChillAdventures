@@ -253,7 +253,7 @@ MonoBehaviour:
   waterGO: {fileID: 100000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
   waterShoreMaterial: {fileID: 0}
   waterShoreThickness: 10
-  erosionType: 1
+  erosionType: 5
   erosionSmoothing: 0
   erosionRainDroplets: 500
   erosionRainStrength: 0.1
@@ -270,13 +270,13 @@ MonoBehaviour:
   erosionWindNoiseZ: 0.06
   erosionWindNoiseAmplitude: 30
   erosionWindDirection: 0
-  erosionCanyonBottomHeight: 0.5
-  erosionCanyonTopStepHeight: 1
-  erosionCanyonStepNumber: 6
+  erosionCanyonBottomHeight: 0.282
+  erosionCanyonTopStepHeight: 0.448
+  erosionCanyonStepNumber: 13
   erosionCanyonMeandering: 8
-  erosionCanyonBottomSteepness: 0.0005
-  erosionCanyonBottomWidth: 12
-  erosionCanyonMaxStepWidth: 5
+  erosionCanyonBottomSteepness: 0.0002
+  erosionCanyonBottomWidth: 9
+  erosionCanyonMaxStepWidth: 11
 --- !u!154 &372746670
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -570,7 +570,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2286138652975469830}
-  m_LocalRotation: {x: -0.050868616, y: 0.92924136, z: -0.13976051, w: -0.33821586}
+  m_LocalRotation: {x: -0.050868616, y: 0.92924136, z: -0.13976052, w: -0.33821586}
   m_LocalPosition: {x: -125.67143, y: 37.381203, z: -270.32892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -919,7 +919,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6169992465918096155}
-  m_LocalRotation: {x: -0.095408216, y: -0.22942168, z: 0.09625053, w: 0.96384585}
+  m_LocalRotation: {x: -0.095408216, y: -0.22942168, z: 0.09625054, w: 0.96384585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1052,7 +1052,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6169992466150720645}
-  m_LocalRotation: {x: -0.095408216, y: -0.22942168, z: 0.09625053, w: 0.96384585}
+  m_LocalRotation: {x: -0.095408216, y: -0.22942168, z: 0.09625054, w: 0.96384585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1067,7 +1067,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6169992466254567676}
-  m_LocalRotation: {x: -0.09540823, y: -0.22942168, z: 0.09625052, w: 0.96384585}
+  m_LocalRotation: {x: -0.095408216, y: -0.22942168, z: 0.09625053, w: 0.96384585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
