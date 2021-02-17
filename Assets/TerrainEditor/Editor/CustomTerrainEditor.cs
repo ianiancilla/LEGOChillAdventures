@@ -925,6 +925,11 @@ public class CustomTerrainEditor : Editor
             {
                 myCustomTerrain.DrawShoreLine();
             }
+            GUILayout.Space(10);
+            if (GUILayout.Button("Add Shore Collider"))
+            {
+                myCustomTerrain.CreateShoreCollider();
+            }
 
         }
     }

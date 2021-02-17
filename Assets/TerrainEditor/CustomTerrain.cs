@@ -1190,6 +1190,83 @@ public class CustomTerrain : MonoBehaviour
 
     }
 
+    public void CreateShoreCollider()
+    {
+        float[,] heightmap = myTerrainData.GetHeights(0, 0,
+                                                      myTerrainData.heightmapResolution,
+                                                      myTerrainData.heightmapResolution);
+
+        // iterate over heigthmap
+        for (int x = 0; x < myTerrainData.heightmapResolution; x++)
+        {
+            for (int z = 0; z < myTerrainData.heightmapResolution; z++)
+            {
+                List<Vector2> neighbours = GetNeighbours(myTerrainData.heightmapResolution,
+                                         x, z);
+                bool isOnShore = false;
+                Vector2 shoreNeighbour = new Vector2();
+
+                // create a quad at each shore location
+                isOnShore = IsOnShore(heightmap, x, z, neighbours, out shoreNeighbour);
+
+                if (isOnShore)
+                {
+                    GameObject shoreGO = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    //shoreGO.transform.localScale *= waterShoreThickness;
+
+                    shoreGO.transform.position = new Vector3(z / (float)myTerrainData.heightmapResolution * myTerrainData.size.z,
+                                                             waterHeight * myTerrainData.size.y,
+                                                             x / (float)myTerrainData.heightmapResolution * myTerrainData.size.x);
+
+
+                    shoreGO.transform.LookAt(new Vector3(shoreNeighbour.y / (float)myTerrainData.heightmapResolution * myTerrainData.size.z,
+                                                         waterHeight * myTerrainData.size.y,
+                                                         shoreNeighbour.x / (float)myTerrainData.heightmapResolution * myTerrainData.size.x));
+
+                    shoreGO.transform.Rotate(90, 0, 0);
+                    shoreGO.tag = "ShoreCollider";
+                }
+            }
+        }
+
+        // Store all quad meshes in an array
+        GameObject[] shoreCubes = GameObject.FindGameObjectsWithTag("ShoreCollider");
+        MeshFilter[] shoreCubesMeshFilters = new MeshFilter[shoreCubes.Length];
+        for (int i = 0; i < shoreCubes.Length; i++)
+        {
+            shoreCubesMeshFilters[i] = shoreCubes[i].GetComponent<MeshFilter>();
+        }
+
+        // combine all shore meshes
+        CombineInstance[] combine = new CombineInstance[shoreCubesMeshFilters.Length];
+        for (int i = 0; i < shoreCubesMeshFilters.Length; i++)
+        {
+            combine[i].mesh = shoreCubesMeshFilters[i].sharedMesh;
+            combine[i].transform = shoreCubesMeshFilters[i].transform.localToWorldMatrix;
+            shoreCubesMeshFilters[i].gameObject.SetActive(false);
+        }
+
+        GameObject currentShoreCollider = GameObject.Find("ShoreCollider");
+        if (currentShoreCollider)
+        {
+            DestroyImmediate(currentShoreCollider);
+        }
+        GameObject shoreCollider = new GameObject();
+        shoreCollider.name = "ShoreCollider";
+        shoreCollider.transform.position = this.transform.position;
+        shoreCollider.transform.rotation = this.transform.rotation;
+        MeshFilter shoreMeshFilter = shoreCollider.AddComponent<MeshFilter>();
+        shoreMeshFilter.mesh = new Mesh();
+        shoreCollider.GetComponent<MeshFilter>().sharedMesh.CombineMeshes(combine);
+        MeshRenderer meshRenderer = shoreCollider.AddComponent<MeshRenderer>();
+
+        for (int iQuad = 0; iQuad < shoreCubes.Length; iQuad++)
+        {
+            DestroyImmediate(shoreCubes[iQuad]);
+        }
+
+    }
+
     #endregion
 
     #region Erosion functions
@@ -1667,6 +1744,7 @@ public class CustomTerrain : MonoBehaviour
         AddOptionToProperty(tagsProp, "Terrain", PropertyType.Tag);
         AddOptionToProperty(tagsProp, "Cloud", PropertyType.Tag);
         AddOptionToProperty(tagsProp, "Shore", PropertyType.Tag);
+        AddOptionToProperty(tagsProp, "ShoreCollider", PropertyType.Tag);
 
         // put terrain on Terrain layer
         SerializedProperty layerProp = tagManager.FindProperty("layers");
