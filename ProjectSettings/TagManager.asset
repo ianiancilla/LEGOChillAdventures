@@ -9,7 +9,6 @@ TagManager:
   - Terrain
   - Projectile
   - TutorialRequirement
-  - ShoreCollider
   layers:
   - Default
   - TransparentFX
