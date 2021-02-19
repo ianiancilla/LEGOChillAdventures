@@ -9,6 +9,7 @@ TagManager:
   - Terrain
   - Projectile
   - TutorialRequirement
+  - Water
   layers:
   - Default
   - TransparentFX

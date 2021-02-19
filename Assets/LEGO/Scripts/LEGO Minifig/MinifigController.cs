@@ -1025,6 +1025,9 @@ namespace Unity.LEGO.Minifig
 
             UpdateState();
         }
+
+        public bool GetAirborne() { return airborne; }
+
     }
 
 }
