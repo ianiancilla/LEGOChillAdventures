@@ -63,8 +63,8 @@ public class Player_WaterCollision : MonoBehaviour
     }
     private bool IsOnWater()
     {
-        // Bit shift to get a bit mask of layers 4(Water) and 8(Terrain)
-        int layerMask = (1 << 4) | (1 << 8);
+        // Bit shift to get a bit mask of layers 4(Water) 8(Terrain) and 14(Ridable)
+        int layerMask = (1 << 4) | (1 << 8) | (1 << 14);
 
         RaycastHit hit;
         // Does the ray intersect any objects on those two layers?
