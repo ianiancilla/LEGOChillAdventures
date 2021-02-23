@@ -17560,36 +17560,6 @@ MonoBehaviour:
   part: {fileID: 3271198037043575598}
   connections: 1600000018000000
   field: {fileID: 3271198035276855579}
---- !u!114 &3271198036356600721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9222833118089464905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33190620517f046d6b5b17697a8a471b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Scope: 1
-  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Pickup Trigger.png
-  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
-  m_Brick: {fileID: 1528197701965861002}
-  m_BrickPivotOffset: {x: -0.40003747, y: 0.5689739, z: -0.39999777}
-  Progress: 0
-  Goal: 0
-  m_Conditions: []
-  m_Target: 0
-  m_SpecificTargetActions:
-  - {fileID: 0}
-  m_Repeat: 0
-  m_Mode: 2
-  m_AmountModeCount: 1
-  m_SpecificModePickupActions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &3271198036361572052
 GameObject:
   m_ObjectHideFlags: 0
@@ -27334,6 +27304,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onlyActiveGameObject: 1
   hideChildren: 1
+--- !u!114 &3271198036356600721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222833118089464905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33190620517f046d6b5b17697a8a471b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Pickup Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 1528197701965861002}
+  m_BrickPivotOffset: {x: -0.40003747, y: 0.5689739, z: -0.39999777}
+  Progress: 0
+  Goal: 0
+  m_Conditions: []
+  m_Target: 0
+  m_SpecificTargetActions:
+  - {fileID: 0}
+  m_Repeat: 0
+  m_Mode: 2
+  m_AmountModeCount: 1
+  m_SpecificModePickupActions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &3271198035036738201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27361,6 +27361,11 @@ PrefabInstance:
       propertyPath: m_Repeat
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8389159348403026334, guid: 57247d92339f745738d099ab710462e5,
+        type: 3}
+      propertyPath: m_Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 19008a7fe89d64f3ea225bdc28e38333, type: 3}
     - target: {fileID: 264606751974651718, guid: 57247d92339f745738d099ab710462e5,
         type: 3}
       propertyPath: m_Layer
@@ -27833,12 +27838,17 @@ PrefabInstance:
     - target: {fileID: 3453244826810790980, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
         type: 3}
       propertyPath: m_Time
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3453244826810790980, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
         type: 3}
       propertyPath: m_Pause
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3453244826810790980, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
+        type: 3}
+      propertyPath: m_Audio
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5952549877573738461, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
         type: 3}
@@ -27908,12 +27918,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3271198036356600724}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2342815362851866665 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
-    type: 3}
-  m_PrefabInstance: {fileID: 3271198036356600724}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1528197701965861002 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4057918081354416926, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
@@ -27938,3 +27942,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616267e32080e4b8dac3ff19dbc8c958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2342815362851866665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 5f90c7d3098fc4659b7fc9bb45df5fa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3271198036356600724}
+  m_PrefabAsset: {fileID: 0}
