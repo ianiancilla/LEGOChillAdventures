@@ -113,17 +113,17 @@ namespace Unity.LEGO.Game
                     // Zoom in on the player.
                     StartCoroutine(ZoomInOnPlayer());
                 }
-                else
-                {
-                    m_GameOverSceneToLoad = m_LoseScene;
-                    m_GameOverSceneTime = Time.time + m_LoseSceneDelay;
+                //else
+                //{
+                //    m_GameOverSceneToLoad = m_LoseScene;
+                //    m_GameOverSceneTime = Time.time + m_LoseSceneDelay;
 
-                    // Stop following the player.
-                    if (m_FreeLookCamera)
-                    {
-                        m_FreeLookCamera.Follow = null;
-                    }
-                }
+                //    // Stop following the player.
+                //    if (m_FreeLookCamera)
+                //    {
+                //        m_FreeLookCamera.Follow = null;
+                //    }
+                //}
             }
         }
 
