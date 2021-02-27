@@ -102,28 +102,29 @@ namespace Unity.LEGO.Game
         {
             if (!GameIsEnding)
             {
-                GameIsEnding = true;
+                //GameIsEnding = true;
 
                 // Remember the scene to load and handle the camera accordingly.
                 if (evt.Win)
                 {
+                    GameIsEnding = true;    // I want the player to only be able to win, and not lose if he explodes!
                     m_GameOverSceneToLoad = m_WinScene;
                     m_GameOverSceneTime = Time.time + m_WinSceneDelay;
 
                     // Zoom in on the player.
                     StartCoroutine(ZoomInOnPlayer());
                 }
-                else
-                {
-                    m_GameOverSceneToLoad = m_LoseScene;
-                    m_GameOverSceneTime = Time.time + m_LoseSceneDelay;
+                //else
+                //{
+                //    m_GameOverSceneToLoad = m_LoseScene;
+                //    m_GameOverSceneTime = Time.time + m_LoseSceneDelay;
 
-                    // Stop following the player.
-                    if (m_FreeLookCamera)
-                    {
-                        m_FreeLookCamera.Follow = null;
-                    }
-                }
+                //    // Stop following the player.
+                //    if (m_FreeLookCamera)
+                //    {
+                //        m_FreeLookCamera.Follow = null;
+                //    }
+                //}
             }
         }
 

@@ -5,7 +5,8 @@ using Unity.LEGO.Minifig;
 
 public class Player_WaterCollision : MonoBehaviour
 {
-    [SerializeField] int maxPositionsQueueLength = 100;
+    [SerializeField] int maxPositionsQueueLength = 10;
+    [SerializeField] float waterHeight = 29.999f;
 
     const string WATER_TAG = "Water";
 
@@ -31,15 +32,7 @@ public class Player_WaterCollision : MonoBehaviour
     {
         if (calledRespawn) { return; }
 
-        if (!IsOnWater())    // we only remember valid positions to respawn to
-        {
-            UpdatePositionQueue();
-            return;
-        }
-
-        // *** from here only happens if minifig IS on water
-
-        if (!minifigController.GetAirborne())
+        if (IsDrowning())
         {
             // Explode old player
             minifigController.Explode();
@@ -48,7 +41,12 @@ public class Player_WaterCollision : MonoBehaviour
                                                         previousPositionsQueue[0],
                                                         this.transform.rotation);
             calledRespawn = true;
+            return;
+        }
 
+        if (IsOnDryLand())
+        {
+            UpdatePositionQueue();
         }
     }
 
@@ -61,25 +59,33 @@ public class Player_WaterCollision : MonoBehaviour
         }
         previousPositionsQueue.Add(this.transform.position);
     }
-    private bool IsOnWater()
+    private bool IsDrowning()
     {
-        // Bit shift to get a bit mask of layers 4(Water) 8(Terrain) and 14(Ridable)
-        int layerMask = (1 << 4) | (1 << 8) | (1 << 14);
+        float playerHeight = this.gameObject.transform.position.y;
+
+        return (playerHeight <= waterHeight);
+    }
+
+    private bool IsOnDryLand()
+    {
+        // Bit shift to get a bit mask of layers 4(Water) 8(Terrain)
+        int layerMask = (1 << 4) | (1 << 8);
 
         RaycastHit hit;
         // Does the ray intersect any objects on those two layers?
         if (Physics.Raycast(transform.position + new Vector3(0, 100, 0),
-                            Vector3.down, 
-                            out hit, 
-                            Mathf.Infinity, 
+                            Vector3.down,
+                            out hit,
+                            Mathf.Infinity,
                             layerMask))
         {
-            if (hit.collider.gameObject.tag == WATER_TAG)
+            if (hit.collider.gameObject.tag != WATER_TAG)
             {
                 return true;
             }
         }
         return false;
+
     }
 
 }
