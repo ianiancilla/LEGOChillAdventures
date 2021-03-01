@@ -2068,6 +2068,7 @@ MonoBehaviour:
   m_Target: 1
   m_SpecificTargetActions:
   - {fileID: 7069417287928080732}
+  - {fileID: 7242377997833932340}
   m_Repeat: 0
   m_Sense: 0
   m_SenseTag: 
@@ -2096,6 +2097,27 @@ MonoBehaviour:
   m_Variable: {fileID: 11400000, guid: 9261f9ea2e9216c46ad193ed9d1a494b, type: 2}
   m_Operator: 1
   m_Value: 1
+--- !u!114 &7242377997833932340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039067169140770169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57315894b377470f9cf5183b44de9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Audio Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 7250980635231656378}
+  m_BrickPivotOffset: {x: -0.4008721, y: 0.56739247, z: -0.39903945}
+  m_Audio: {fileID: 8300000, guid: 34fafe0d866334c4d96a7432e521fa3c, type: 3}
+  m_AudioVolume: 0.5
+  m_Spatial: 0
+  m_Loop: 0
 --- !u!1 &1040280232600806819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,8 +4853,10 @@ GameObject:
   - component: {fileID: 6221461190022303929}
   - component: {fileID: 1332579710900170829}
   - component: {fileID: 2427097884656675198}
+  - component: {fileID: 1267681372616883966}
+  - component: {fileID: 5410077962009344990}
   m_Layer: 0
-  m_Name: 3024
+  m_Name: Bleating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4959,6 +4983,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2381947722423479262}
   m_Mesh: {fileID: -4974468161004867859, guid: 4696e5d920570492d88bc926911d3936, type: 3}
+--- !u!114 &1267681372616883966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381947722423479262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6ee59c9581446e3a9cfb723d62a5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 0
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Nearby Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 2847251355163845616}
+  m_BrickPivotOffset: {x: -0.00090734207, y: 0.2489516, z: 0.0000004544989}
+  Progress: 0
+  Goal: 0
+  m_Conditions: []
+  m_Target: 1
+  m_SpecificTargetActions:
+  - {fileID: 5410077962009344990}
+  m_Repeat: 1
+  m_Sense: 0
+  m_SenseTag: 
+  m_Distance: 50
+--- !u!114 &5410077962009344990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381947722423479262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57315894b377470f9cf5183b44de9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Audio Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 2847251355163845616}
+  m_BrickPivotOffset: {x: -0.00090734207, y: 0.2489516, z: 0.0000004544989}
+  m_Audio: {fileID: 8300000, guid: 3bec6c7fcbfdd794892bc8f07440064f, type: 3}
+  m_AudioVolume: 1
+  m_Spatial: 1
+  m_Loop: 0
 --- !u!1 &2389682245822577818
 GameObject:
   m_ObjectHideFlags: 0
@@ -21343,8 +21415,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alive
       objectReference: {fileID: 0}
+    - target: {fileID: 6158147009043871300, guid: 14c411293fa3844dda7a44a1e006eb6c,
+        type: 3}
+      propertyPath: m_Audio
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14c411293fa3844dda7a44a1e006eb6c, type: 3}
+--- !u!1 &1039067169140770169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5952549877573738461, guid: 14c411293fa3844dda7a44a1e006eb6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6696912597922077348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7250980635231656378 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4057918081354416926, guid: 14c411293fa3844dda7a44a1e006eb6c,
@@ -21357,18 +21440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0090e07a89a4cbb8f1f1d126249521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1039067169140770169 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5952549877573738461, guid: 14c411293fa3844dda7a44a1e006eb6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6696912597922077348}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5843083954774294809 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 14c411293fa3844dda7a44a1e006eb6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6696912597922077348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7726269046206936310 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4019759835019570770, guid: 14c411293fa3844dda7a44a1e006eb6c,
@@ -21381,3 +21452,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616267e32080e4b8dac3ff19dbc8c958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &5843083954774294809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 14c411293fa3844dda7a44a1e006eb6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6696912597922077348}
+  m_PrefabAsset: {fileID: 0}

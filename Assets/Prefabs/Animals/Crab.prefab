@@ -13137,8 +13137,8 @@ MonoBehaviour:
   m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
   m_Brick: {fileID: 1987343102613384773}
   m_BrickPivotOffset: {x: -1.1998324, y: 0.24928063, z: -0.4000422}
-  m_Audio: {fileID: 8300000, guid: e4e105a988a4047bfa9eb7a4e57187a3, type: 3}
-  m_AudioVolume: 0.822
+  m_Audio: {fileID: 8300000, guid: 39948ec2175e749819ecd850a1d0e5af, type: 3}
+  m_AudioVolume: 0.503
   m_Type: 0
 --- !u!114 &1987343102613384781
 MonoBehaviour:
