@@ -22,9 +22,7 @@ public class PlayerRespawner : MonoBehaviour
                                          Vector3 position, Quaternion rotation)
     {
         yield return new WaitForSeconds(respawnWait);
-        Debug.Log("before destroy");
         Destroy(oldPlayer);
-        Debug.Log("after destroy");
 
         GameObject newPlayer = Instantiate(playerPrefab,
                                            position,

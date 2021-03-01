@@ -7,6 +7,7 @@ public class Player_WaterCollision : MonoBehaviour
 {
     [SerializeField] int maxPositionsQueueLength = 10;
     [SerializeField] float waterHeight = 29.999f;
+    [SerializeField] AudioClip splashAudio;
 
     const string WATER_TAG = "Water";
 
@@ -34,6 +35,8 @@ public class Player_WaterCollision : MonoBehaviour
 
         if (IsDrowning())
         {
+            //// Play audio
+            //AudioSource.PlayClipAtPoint(splashAudio, transform.position, 3f);
             // Explode old player
             minifigController.Explode();
             // Spawn and setup new player, and destroy old one, after delay

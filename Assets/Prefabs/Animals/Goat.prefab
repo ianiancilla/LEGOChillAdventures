@@ -2067,12 +2067,37 @@ MonoBehaviour:
   m_Conditions: []
   m_Target: 1
   m_SpecificTargetActions:
-  - {fileID: 7069417287928080732}
   - {fileID: 7242377997833932340}
+  - {fileID: 5256621627003613705}
+  - {fileID: 7069417287928080732}
   m_Repeat: 0
   m_Sense: 0
   m_SenseTag: 
   m_Distance: 10
+--- !u!114 &5256621627003613705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039067169140770169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ece6ed122988848bd16ebf8cea18ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Counter Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 7250980635231656378}
+  m_BrickPivotOffset: {x: -0.4008721, y: 0.56739247, z: -0.39903945}
+  m_Audio: {fileID: 0}
+  m_AudioVolume: 1
+  m_Pause: 1
+  m_Repeat: 0
+  m_Variable: {fileID: 11400000, guid: d1e147f395e6b6643b5b1b6235814088, type: 2}
+  m_Operator: 0
+  m_Value: 1
 --- !u!114 &7069417287928080732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5002,7 +5027,10 @@ MonoBehaviour:
   m_BrickPivotOffset: {x: -0.00090734207, y: 0.2489516, z: 0.0000004544989}
   Progress: 0
   Goal: 0
-  m_Conditions: []
+  m_Conditions:
+  - Variable: {fileID: 11400000, guid: d1e147f395e6b6643b5b1b6235814088, type: 2}
+    Type: 2
+    Value: 0
   m_Target: 1
   m_SpecificTargetActions:
   - {fileID: 5410077962009344990}
@@ -7160,8 +7188,9 @@ GameObject:
   - component: {fileID: 1162125608750283319}
   - component: {fileID: 7728645611178684538}
   - component: {fileID: 3207218595240096692}
+  - component: {fileID: 1655818299743929860}
   m_Layer: 0
-  m_Name: 3024
+  m_Name: LookAt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7174,8 +7203,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3305751915011416293}
-  m_LocalRotation: {x: -0.008967355, y: -0.0112986965, z: -0.0065952837, w: 0.99987423}
-  m_LocalPosition: {x: 0.40847775, y: 1.9190801, z: -0.40138024}
+  m_LocalRotation: {x: 0.010547802, y: -0.69903326, z: -0.0016721254, w: -0.71500945}
+  m_LocalPosition: {x: 0.41611776, y: 1.9190756, z: -0.40265405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4634777970756574255}
@@ -7287,6 +7316,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3305751915011416293}
   m_Mesh: {fileID: -4974468161004867859, guid: 4696e5d920570492d88bc926911d3936, type: 3}
+--- !u!114 &1655818299743929860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3305751915011416293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9aecf603388481284758ba3555f4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Look At Action.png
+  m_FlashColour: {r: 0.23529412, g: 0.7058824, b: 1.3176471, a: 2}
+  m_Brick: {fileID: 6115778063109114952}
+  m_BrickPivotOffset: {x: -0.002051874, y: 0.2466676, z: 0.0015651169}
+  m_Audio: {fileID: 0}
+  m_AudioVolume: 1
+  m_Pause: 1
+  m_Repeat: 1
+  m_Time: 1
+  m_Collide: 1
+  m_LookAt: 0
+  m_TransformModeTransform: {fileID: 0}
+  m_Speed: 180
+  m_Rotate: 0
 --- !u!1 &3311955371249996982
 GameObject:
   m_ObjectHideFlags: 0
@@ -10648,7 +10704,7 @@ MonoBehaviour:
     knob: {fileID: 0}
     tubes: []
   connectivity: {fileID: 6001915644794069506}
-  connected: 0c0000001a0000000a000000180000000800000016000000
+  connected: 0c0000000a0000001800000008000000160000001a000000
   connectableConnections: 18
   connectedTo:
   - field: {fileID: 0}
@@ -15336,7 +15392,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6455986798300170779}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.000000011641532, y: 0.000001013279, z: 0.000000007385097,
+    w: 1}
   m_LocalPosition: {x: 0.4, y: 0.32, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -21419,12 +21476,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Audio
       value: 
+      objectReference: {fileID: 8300000, guid: 3bec6c7fcbfdd794892bc8f07440064f, type: 3}
+    - target: {fileID: 6158147009043871300, guid: 14c411293fa3844dda7a44a1e006eb6c,
+        type: 3}
+      propertyPath: m_AudioVolume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14c411293fa3844dda7a44a1e006eb6c, type: 3}
 --- !u!1 &1039067169140770169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5952549877573738461, guid: 14c411293fa3844dda7a44a1e006eb6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6696912597922077348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5843083954774294809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 14c411293fa3844dda7a44a1e006eb6c,
     type: 3}
   m_PrefabInstance: {fileID: 6696912597922077348}
   m_PrefabAsset: {fileID: 0}
@@ -21452,9 +21520,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616267e32080e4b8dac3ff19dbc8c958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &5843083954774294809 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: 14c411293fa3844dda7a44a1e006eb6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6696912597922077348}
-  m_PrefabAsset: {fileID: 0}

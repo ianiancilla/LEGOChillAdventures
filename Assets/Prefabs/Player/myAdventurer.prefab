@@ -3067,7 +3067,7 @@ MonoBehaviour:
   jumpAudioClip: {fileID: 8300000, guid: 542490ca55814441981ef88f5d1f2dc6, type: 3}
   doubleJumpAudioClip: {fileID: 8300000, guid: 542490ca55814441981ef88f5d1f2dc6, type: 3}
   landAudioClip: {fileID: 8300000, guid: a12caccc734354aa09f7d2a412925ac2, type: 3}
-  explodeAudioClip: {fileID: 8300000, guid: b9b607b06267c4394b07c19523c455f1, type: 3}
+  explodeAudioClip: {fileID: 8300000, guid: be7961f7bcbd1f947be36433ed305c3c, type: 3}
   inputType: 1
   inputEnabled: 1
   maxJumpsInAir: 2
@@ -3396,8 +3396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ffb4f3fa1aae0448b400a7b552fca19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 4825565819311776574}
-  maxPositionsQueueLength: 100
+  maxPositionsQueueLength: 10
+  waterHeight: 29.999
+  splashAudio: {fileID: 8300000, guid: 284e4dfa73af898479b1447fc9fccfcb, type: 3}
 --- !u!1 &4887338852693325862
 GameObject:
   m_ObjectHideFlags: 0

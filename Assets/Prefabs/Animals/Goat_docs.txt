@@ -1,0 +1,14 @@
+GOAT PREFAB BEHAVIOUR
+
+ALIVE BRICK
+When player gets within 10m:
+- pickup sound
+- decrease goats to find variable
+- increase "found this goat" variable
+
+BLEATING BRICK
+When player gets within 50m:
+- if this goat has not been found yet, bleat.
+
+LOOKAT BRICK
+always looks at player
