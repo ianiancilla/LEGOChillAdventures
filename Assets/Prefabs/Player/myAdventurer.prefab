@@ -3052,7 +3052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652629fecff6a4c8fa0a985e628de942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForwardSpeed: 20
+  maxForwardSpeed: 18
   maxBackwardSpeed: 6
   acceleration: 40
   maxRotateSpeed: 450
@@ -3070,7 +3070,7 @@ MonoBehaviour:
   explodeAudioClip: {fileID: 8300000, guid: be7961f7bcbd1f947be36433ed305c3c, type: 3}
   inputType: 1
   inputEnabled: 1
-  maxJumpsInAir: 2
+  maxJumpsInAir: 1
   leftArmTip: {fileID: 217715709156873304}
   rightArmTip: {fileID: 5462312487124628436}
   leftLegTip: {fileID: 4867373539240125992}
