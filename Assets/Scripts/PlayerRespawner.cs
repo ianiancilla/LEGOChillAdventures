@@ -7,7 +7,7 @@ using Unity.LEGO.Minifig;
 
 public class PlayerRespawner : MonoBehaviour
 {
-    [SerializeField] GameObject playerPrefab;
+    [SerializeField] GameObject playerPrefab = null;
     [SerializeField] float respawnWait = 3f;
 
     const string CAMERA_NAME = "Third Person Free Look Camera";
