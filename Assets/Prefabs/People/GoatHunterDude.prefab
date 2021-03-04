@@ -4194,36 +4194,10 @@ MonoBehaviour:
   m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
   m_Brick: {fileID: 4219670947601408587}
   m_BrickPivotOffset: {x: -0.3999922, y: 0.56900024, z: -0.39997795}
-  m_Audio: {fileID: 8300000, guid: 41ab69793270bba44a0a7356321875b2, type: 3}
-  m_AudioVolume: 0.41
+  m_Audio: {fileID: 8300000, guid: 3bec6c7fcbfdd794892bc8f07440064f, type: 3}
+  m_AudioVolume: 0.502
   m_Spatial: 1
-  m_Loop: 0
---- !u!114 &6232273995179135718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5783855793078107784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c6ee59c9581446e3a9cfb723d62a5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Scope: 1
-  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Nearby Trigger.png
-  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
-  m_Brick: {fileID: 4219670947601408587}
-  m_BrickPivotOffset: {x: -0.3999922, y: 0.56900024, z: -0.39997795}
-  Progress: 0
-  Goal: 0
-  m_Conditions: []
-  m_Target: 0
-  m_SpecificTargetActions: []
-  m_Repeat: 0
-  m_Sense: 0
-  m_SenseTag: 
-  m_Distance: 10
+  m_Loop: 1
 --- !u!1 &5803352649631806648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +5344,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8214068424106501462}
-  m_LocalRotation: {x: -0, y: 0.817915, z: -0, w: -0.575339}
+  m_LocalRotation: {x: 0, y: 0.81791353, z: -0, w: -0.57534117}
   m_LocalPosition: {x: -358.5135, y: 32.58, z: 7.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6276,7 +6250,7 @@ PrefabInstance:
     - target: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
         type: 3}
       propertyPath: m_SpeechBubbleInfos.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
         type: 3}
@@ -6291,12 +6265,12 @@ PrefabInstance:
     - target: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
         type: 3}
       propertyPath: m_SpeechBubbleInfos.Array.data[0].Text
-      value: I found 3 goats so far. You?
+      value: Baaaah! BAAAAH!
       objectReference: {fileID: 0}
     - target: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
         type: 3}
       propertyPath: m_SpeechBubbleInfos.Array.data[1].Text
-      value: Welcome to Brick Chill Island, friend.
+      value: (sssh, I am trying to call the goats to me!)
       objectReference: {fileID: 0}
     - target: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
         type: 3}
@@ -6320,6 +6294,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d39f04291e3b341f78bf4cfa451accd7, type: 3}
+--- !u!1 &5783855793078107784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5952549877573738461, guid: d39f04291e3b341f78bf4cfa451accd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 207120092613484885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1096958290353601256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1001764359956896701, guid: d39f04291e3b341f78bf4cfa451accd7,
@@ -6338,9 +6318,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0090e07a89a4cbb8f1f1d126249521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &5783855793078107784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5952549877573738461, guid: d39f04291e3b341f78bf4cfa451accd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 207120092613484885}
-  m_PrefabAsset: {fileID: 0}

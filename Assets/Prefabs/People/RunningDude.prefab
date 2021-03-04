@@ -2830,81 +2830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onlyActiveGameObject: 0
   hideChildren: 0
---- !u!114 &4390108461757104945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7959963846052666608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db14ce88fa83143eebe2a03a9aace553, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Scope: 1
-  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Rotate Action.png
-  m_FlashColour: {r: 0.23529412, g: 0.7058824, b: 1.3176471, a: 2}
-  m_Brick: {fileID: 341238502190202931}
-  m_BrickPivotOffset: {x: -0.40002578, y: 0.56900024, z: -0.40000564}
-  m_Audio: {fileID: 8300000, guid: 2a988a8f5a6ac4c5a9084b2a952daa59, type: 3}
-  m_AudioVolume: 1
-  m_Pause: 20
-  m_Repeat: 1
-  m_Time: 0.1
-  m_Collide: 0
-  m_Angle: 180
---- !u!114 &4390108461757104944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7959963846052666608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21784e39a1d334b14a37b4d137200346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Scope: 1
-  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Move Action.png
-  m_FlashColour: {r: 0.23529412, g: 0.7058824, b: 1.3176471, a: 2}
-  m_Brick: {fileID: 341238502190202931}
-  m_BrickPivotOffset: {x: -0.40002578, y: 0.56900024, z: -0.40000564}
-  m_Audio: {fileID: 8300000, guid: 97adc7a6316eb42039437d84c81b25c9, type: 3}
-  m_AudioVolume: 1
-  m_Pause: 1
-  m_Repeat: 1
-  m_Time: 20
-  m_Collide: 0
-  m_Distance: 120
---- !u!114 &7516058005346201758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7959963846052666608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c6ee59c9581446e3a9cfb723d62a5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Scope: 1
-  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Nearby Trigger.png
-  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
-  m_Brick: {fileID: 341238502190202931}
-  m_BrickPivotOffset: {x: -0.3999922, y: 0.56900024, z: -0.39997795}
-  Progress: 0
-  Goal: 0
-  m_Conditions: []
-  m_Target: 1
-  m_SpecificTargetActions:
-  - {fileID: 172982849993323220}
-  m_Repeat: 1
-  m_Sense: 0
-  m_SenseTag: 
-  m_Distance: 5
 --- !u!1 &4390108461895344816
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,6 +5054,102 @@ Transform:
   m_Father: {fileID: 2041717552977478715}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 9.92137, y: -11.59926, z: 117.25553}
+--- !u!114 &4390108461757104944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959963846052666608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21784e39a1d334b14a37b4d137200346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Move Action.png
+  m_FlashColour: {r: 0.23529412, g: 0.7058824, b: 1.3176471, a: 2}
+  m_Brick: {fileID: 341238502190202931}
+  m_BrickPivotOffset: {x: -0.40002578, y: 0.56900024, z: -0.40000564}
+  m_Audio: {fileID: 0}
+  m_AudioVolume: 1
+  m_Pause: 1
+  m_Repeat: 1
+  m_Time: 20
+  m_Collide: 0
+  m_Distance: 120
+--- !u!114 &4390108461757104945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959963846052666608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db14ce88fa83143eebe2a03a9aace553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Rotate Action.png
+  m_FlashColour: {r: 0.23529412, g: 0.7058824, b: 1.3176471, a: 2}
+  m_Brick: {fileID: 341238502190202931}
+  m_BrickPivotOffset: {x: -0.40002578, y: 0.56900024, z: -0.40000564}
+  m_Audio: {fileID: 0}
+  m_AudioVolume: 1
+  m_Pause: 20
+  m_Repeat: 1
+  m_Time: 0.1
+  m_Collide: 0
+  m_Angle: 180
+--- !u!114 &7516058005346201758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959963846052666608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6ee59c9581446e3a9cfb723d62a5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Nearby Trigger.png
+  m_FlashColour: {r: 1.6, g: 1.4509804, b: 1.1058824, a: 2}
+  m_Brick: {fileID: 341238502190202931}
+  m_BrickPivotOffset: {x: -0.3999922, y: 0.56900024, z: -0.39997795}
+  Progress: 0
+  Goal: 0
+  m_Conditions: []
+  m_Target: 1
+  m_SpecificTargetActions:
+  - {fileID: 172982849993323220}
+  m_Repeat: 1
+  m_Sense: 0
+  m_SenseTag: 
+  m_Distance: 5
+--- !u!114 &2676082092058264517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959963846052666608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57315894b377470f9cf5183b44de9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scope: 1
+  m_IconPath: Assets/LEGO/Gizmos/LEGO Behaviour Icons/Audio Action.png
+  m_FlashColour: {r: 0.6901961, g: 1.3411765, b: 0.50980395, a: 2}
+  m_Brick: {fileID: 341238502190202931}
+  m_BrickPivotOffset: {x: -0.3999905, y: 0.5690021, z: -0.39999533}
+  m_Audio: {fileID: 8300000, guid: 97adc7a6316eb42039437d84c81b25c9, type: 3}
+  m_AudioVolume: 0.5
+  m_Spatial: 1
+  m_Loop: 1
 --- !u!1 &7978897215777838784
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,18 +6413,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4390108461757104941}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &172982849993323220 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 4390108461757104941}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7959963846052666608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf7f12643eefb4b4d808df165b776383, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &341238502190202931 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4057918081354416926, guid: d39f04291e3b341f78bf4cfa451accd7,
@@ -6414,5 +6423,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d0090e07a89a4cbb8f1f1d126249521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &172982849993323220 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4506487625966563833, guid: d39f04291e3b341f78bf4cfa451accd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4390108461757104941}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959963846052666608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7f12643eefb4b4d808df165b776383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

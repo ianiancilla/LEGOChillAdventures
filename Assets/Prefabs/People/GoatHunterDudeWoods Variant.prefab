@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &872707142635627973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 354.5343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.59707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 407.09943
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.817915
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.575339
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -469.753
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162640776127584069, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232273995179135718, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_SpecificTargetActions.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214068424106501462, guid: 1f31a1051ce0f8744beffd2185af7998,
+        type: 3}
+      propertyPath: m_Name
+      value: GoatHunterDudeWoods
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f31a1051ce0f8744beffd2185af7998, type: 3}
