@@ -68,7 +68,7 @@ namespace Unity.LEGO.Behaviours
             meshCombiner.CombineParents = optimizationCandidates.ToList();
             meshCombiner.UseGrid = true;
             meshCombiner.GridCenter = optimizationBounds.center;
-            meshCombiner.GridExtents = optimizationBounds.size;
+            //meshCombiner.GridExtents = optimizationBounds.size;
             meshCombiner.GridResolution = new Vector3Int(4, 1, 4);
         }
     }
