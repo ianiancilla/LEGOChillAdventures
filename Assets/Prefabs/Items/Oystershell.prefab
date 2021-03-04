@@ -2604,7 +2604,7 @@ MonoBehaviour:
   designID: 3626
   legacy: 0
   connectivity: {fileID: 968158479695755585}
-  materialIDs: 28000000
+  materialIDs: 49010000
   colliders:
   - {fileID: 4533145172245055728}
   - {fileID: 4645670935417291345}
@@ -3603,7 +3603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 11323c8d186c42244aa99d444bee296c, type: 2}
+  - {fileID: 2100000, guid: 58d5c3f603bb416458a6966690f4a9d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3907,7 +3907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7923374390282933146
 Transform:
   m_ObjectHideFlags: 0

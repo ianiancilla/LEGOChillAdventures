@@ -16,11 +16,11 @@ namespace Unity.LEGO.Game
         [SerializeField, Tooltip("The delay in seconds between the game is won and the win scene is loaded.")]
         float m_WinSceneDelay = 5.0f;
 
-        [Header("Lose")]
-        [SerializeField, Tooltip("The name of the scene you want to load when the game is lost.")]
-        string m_LoseScene = "Menu Lose";
-        [SerializeField, Tooltip("The delay in seconds between the game is lost and the lose scene is loaded.")]
-        float m_LoseSceneDelay = 3.0f;
+        //[Header("Lose")]
+        //[SerializeField, Tooltip("The name of the scene you want to load when the game is lost.")]
+        //string m_LoseScene = "Menu Lose";
+        //[SerializeField, Tooltip("The delay in seconds between the game is lost and the lose scene is loaded.")]
+        //float m_LoseSceneDelay = 3.0f;
 
         [SerializeField, HideInInspector, Tooltip("The delay in seconds until we activate the controller look inputs.")]
         float m_StartGameLockedControllerTimer = 0.3f;
